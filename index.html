@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scrabble.js"></script>
+    <script src="js/piglatin.js"></script>
+    <script src="js/number_to_words.js"></script>
+    <script src="js/factorial.js"></script>
+    <title>Javascript Problems</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"> Scrable Score Calculator</h3>
+        </div>
+        <div class="panel-body">
+          <form id="wordCheck">
+            <div class="form-group" role="form">
+              <label for="word" class = "form-label">Enter your word to score </label>
+              <input class = "form-control" id="word" type="text" placeholder = "Scrable word">
+            </div>
+            <button type="submit" class="btn" id = "submit-button" >Calculate Score!</button>
+         </form>
+        </div>
+        <div class="panel-footer">
+            <span class="scrable-result"></span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class ="panel-heading">
+          <h3 class="panel-title">Pig Latin Translator</h3>
+        </div>
+        <div class="panel-body">
+          <form id="piglatin-form" role="form">
+            <div class="form-group">
+              <label for="phrase" class="form-label">Enter Phrase</label>
+              <input id="phrase" class="form-control" type="text" placeholder="Enter phrase here...">
+            </div>
+            <button type="submit" class="btn">Translate!</button>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <span class="piglatin-result"></span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Number to Workd Calculator</h3>
+        </div>
+        <div class="panel-body">
+          <form id="number-to-word" role="form">
+            <div class="form-group">
+              <label for="number" class="form-label">Enter the number you need translated</label>
+              <input class="form-control" id="number" type="text" placeholder="Number">
+            </div>
+            <button type="submit" class="btn">Translate your Number!</button>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <span class="number-to-word-result"></span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Factorial Calculator</h3>
+        </div>
+        <div class="panel-body">
+          <form id="factorial" role="form">
+            <div class="form-group">
+              <label for="number-factorial" class="form-label">Enter a number to calculate the factorial</label>
+              <input class="form-control" id="number-factorial" type="text" placeholder="Number">
+            </div>
+            <button type="submit" class="btn">Calculate the Factorial</button>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <span class="factorial-result"></span>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Factorial Calculator - Recursive</h3>
+        </div>
+        <div class="panel-body">
+          <form id="factorial-recursive" role="form">
+            <div class="form-group">
+              <label for="number-factorial-recursive" class="form-label">Enter a number to calculate the factorial</label>
+              <input class="form-control" id="number-factorial-recursive" type="text" placeholder="Number">
+            </div>
+            <button type="submit" class="btn">Calculate the Factorial</button>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <span class="factorial-result-recursive"></span>
+        </div>
+      </div>
+   </div>
+  </body>
+</html>
