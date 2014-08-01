@@ -8,10 +8,30 @@
     <script src="js/piglatin.js"></script>
     <script src="js/number_to_words.js"></script>
     <script src="js/factorial.js"></script>
+    <script src="js/encrypt.js"></script>
+    <script src="js/anagram.js"></script>
     <title>Javascript Problems</title>
   </head>
   <body>
     <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-tittle">Encryptonator</h3>
+        </div>
+        <div class="panel-body">
+          <form id="secret-message">
+            <div class="form-group" role="form">
+              <label for="message" class="form-label">Enter your top secret message</label>
+              <input class="form-control" id="message" type="text" placeholder="message">
+            </div>
+            <button type="submit" class="btn">ENCRYPT</button>
+          </form>
+        </div>
+        <div class="panel-footer">
+          <span class="encrypted-message"></span>
+        </div>
+      </div>
+
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title"> Scrable Score Calculator</h3>
@@ -66,6 +86,30 @@
         </div>
       </div>
 
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Anagram?</h3>
+        </div>
+
+        <div class="panel-body">
+          <form id="anagram" role="form">
+              <div class="form-group">
+                <label for="word1" class="form-label">Enter the first word</label>
+                <input class="form-control" id="word1" type="text">
+              </div>
+              <div class="form-group">
+                <label for="word2" class="form-label">Enter the second word</label>
+                <input class="form-control" id="word2" type="text">
+              </div>
+              <button type="submit" class="btn">Anagram?</button>
+              </form>
+          </div>
+          <div class="panel-footer">
+            <span class="anagram-result"></span>
+          </div>
+        </div>
+
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">Factorial Calculator</h3>
@@ -102,6 +146,7 @@
           <span class="factorial-result-recursive"></span>
         </div>
       </div>
+
    </div>
   </body>
 </html>
